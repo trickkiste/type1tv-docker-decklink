@@ -30,11 +30,3 @@ RUN apt-get update && \
     apt-get remove -y curl wget dkms linux-headers-generic && \
     rm -rf /var/lib/apt/lists/* && apt-get -y autoclean && apt-get -y clean && apt-get -y autoremove && rm -rf /tmp/*
 
-#RUN     useradd -m default
-
-#WORKDIR /home/default
-
-#USER    default
-#ENV     HOME /home/default
-
-#ENTRYPOINT ["/usr/bin/obecli"]
