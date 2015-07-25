@@ -30,5 +30,5 @@ RUN apt-get update && \
     grep Depends | sed -n -e 's/^.*linux-headers-//p') && \
     dkms install -v 10.1.1a26 -m blackmagic-io -k $(apt-cache --no-all-versions show linux-headers-generic | \
     grep Depends | sed -n -e 's/^.*linux-headers-//p') && \
-    apt-get remove -y curl wget dkms linux-headers-generic && \
+    apt-get remove -y curl wget linux-headers-generic && \
     rm -rf /var/lib/apt/lists/* && apt-get -y autoclean && apt-get -y clean && apt-get -y autoremove
