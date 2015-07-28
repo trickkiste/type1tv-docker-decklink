@@ -9,5 +9,5 @@ WORKDIR /tmp
 # and conditions, please let me know.
 
 # Install Blackmagic libs (not drivers)
-COPY desktopvideo-10.2.2a8-x86_64/usr/lib/libDeckLinkAPI.so /usr/lib/
-COPY desktopvideo-10.2.2a8-x86_64/usr/lib/libDeckLinkPreviewAPI.so /usr/lib/
+COPY desktopvideo-10.1.1a26-x86_64/usr/lib/libDeckLinkAPI.so /usr/lib/
+COPY desktopvideo-10.1.1a26-x86_64/usr/lib/libDeckLinkPreviewAPI.so /usr/lib/
