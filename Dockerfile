@@ -8,6 +8,12 @@ WORKDIR /tmp
 # The libs are redistributed in this git repo for convenience. If that is prohibited by Blackmagic terms 
 # and conditions, please let me know.
 
+# Install Blackmagic dependencies
+RUN apt-get update && \
+    apt-get install -y libjpeg62 libgl1-mesa-glx libxml2 && \
+    apt-get autoclean -y && apt-get autoremove -y && apt-get clean -y && \
+    rm -rf /var/lib/apt/lists/*
+
 # Install Blackmagic libs (not drivers)
 COPY desktopvideo-10.2.2a8-x86_64/usr/lib/libDeckLinkAPI.so /usr/lib/
 COPY desktopvideo-10.2.2a8-x86_64/usr/lib/libDeckLinkPreviewAPI.so /usr/lib/
