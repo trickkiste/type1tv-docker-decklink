@@ -15,5 +15,5 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # Install Blackmagic libs (not drivers)
-COPY desktopvideo-10.4.2a18-x86_64/usr/lib/libDeckLinkAPI.so /usr/lib/
-COPY desktopvideo-10.4.2a18-x86_64/usr/lib/libDeckLinkPreviewAPI.so /usr/lib/
+COPY desktopvideo-10.9.5a4-x86_64/usr/lib/libDeckLinkAPI.so /usr/lib/
+COPY desktopvideo-10.9.5a4-x86_64/usr/lib/libDeckLinkPreviewAPI.so /usr/lib/
